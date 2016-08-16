@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
 /* GET home page. */
 router.get('/', function(req, res, next) {
   //调用MySQL模块
-  console.log('The solution is ww');
+  /*console.log('The solution is ww');
   connection.connect();
   var t;
   connection.query('SELECT Id,Name,Age From tt', function(err, rows, fields) {
@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
       res.render('index', { title: t });
     }
   })
-  connection.end();
+  connection.end();*/
 
 });
 

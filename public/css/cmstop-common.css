@@ -1,0 +1,403 @@
+@import url("../../../icon/icon.css");
+
+html, body, div, form, p, a, h1, h2, h3, h4, h5, h6, img, table, td, th, input, span, section, header, footer, nav, article, aside, fieldset, textarea, dl, dt, dd, blockquote, ul, ol {
+  margin: 0 0;
+  padding: 0 0;
+}
+section,
+header,
+footer,
+nav,
+article,
+aside {
+  display: block;
+}
+body {
+  font-size: 12px;
+  background-color: #ffffff;
+}
+ol,
+ul {
+  list-style: none;
+}
+li {
+  list-style-type: none;
+}
+caption,
+th {
+  text-align: left;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+ins,
+em,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+input,
+textarea {
+  font-size: 12px;
+  padding: 2px;
+}
+img {
+  vertical-align: top;
+  border-width: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+textarea {
+  overflow: auto;
+}
+a {
+  text-decoration: none;
+  color: #0B3B8C;
+}
+.f-l {
+  float: left;
+  _display: inline;
+}
+.f-r {
+  float: right;
+  _display: inline;
+}
+.clear {
+  clear: both;
+}
+.pos-r {
+  position: relative;
+}
+.pos-a {
+  position: absolute;
+}
+.b {
+  font-weight: bold;
+}
+.hide,
+.hidden {
+  display: none;
+}
+.ov {
+  overflow: hidden;
+  _zoom: 1;
+}
+.tc {
+  text-align: center;
+}
+.dashed {
+  border-bottom: 1px dashed #cccccc;
+}
+.bd-gray {
+  border: 1px solid #D6D6D6;
+}
+.fz12 {
+  font-size: 12px;
+}
+.fz14 {
+  font-size: 14px;
+}
+.ti2 {
+  text-indent: 2em;
+}
+.Opacity {
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.column {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  _zoom: 1;
+}
+
+#Banner ._output {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+.head-repeat-x .top-block {
+  position: absolute;
+  background: transparent url('images/head-ico.png') repeat-x 0 0;
+  width: 100%;
+  height: 32px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.head-repeat-x .header-topbar {
+  height: 32px;
+  width: 960px;
+  margin: 0 auto;
+  /*椤堕儴閾炬帴*/
+}
+.head-repeat-x .header-topbar .share {
+  float: right;
+  _display: inline;
+  margin: 9px 20px 0 0;
+}
+.head-repeat-x .header-topbar .search {
+  float: right;
+  _display: inline;
+  margin-top: 5px;
+  position: relative;
+  width: 123px;
+}
+.head-repeat-x .header-topbar .search .text {
+  width: 90px;
+  height: 16px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  color: #cccccc;
+}
+.head-repeat-x .header-topbar .search .btn-submit {
+  background-image: url('images/head-ico.png');
+  background-position: 0 -235px;
+  width: 30px;
+  height: 22px;
+  border-width: 0;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.head-repeat-x .header-topbar .cal{
+  float:left;
+  width: 16px;
+  height: 15px;
+  background: transparent url(images/cal.png) no-repeat;
+  margin: 8px 0 0 20px;
+  cursor: pointer;
+}
+.head-repeat-x .header-topbar .login {
+  float: left;
+  _display: inline;
+  margin: 9px 20px 0 0;
+}
+.head-repeat-x .header-topbar .login a {
+  color: #666666;
+}
+.head-repeat-x .header-topbar .login a:hover {
+  color: #cc0000;
+}
+.head-repeat-x .header-topbar .head-rss {
+  float: left;
+  _display: inline;
+  margin-top: 9px;
+  width: 37px;
+  height: 14px;
+  background-image: url('images/head-ico.png');
+  background-position: 0 -75px;
+}
+.head-repeat-x .header-topbar .head-top-nav {
+  float: left;
+  _display: inline;
+  margin-top: 9px;
+}
+.head-repeat-x .header-topbar .head-top-nav li {
+  display: inline;
+  margin-right: 22px;
+}
+.head-repeat-x .header-topbar .head-top-nav li a {
+  color: #444;
+}
+.head-repeat-x .header-topbar .head-top-nav li a:hover {
+  color: #cc0000;
+}
+.head-repeat-x .banner {
+  height: 60px;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+.head-repeat-x .banner .logo a {
+  float: left;
+  _display: inline;
+  width: 209px;
+  height: 54px;
+  background-image: url('images/cmstop-logo.png');
+  background-position: -5px 0;
+}
+.head-repeat-x .banner .ad {
+  float: right;
+  _display: inline;
+}
+.head-repeat-x .banner .ad .ad-a {
+  float: left;
+  _display: inline;
+  width: 480px;
+  height: 60px;
+  margin-right: 8px;
+}
+.head-repeat-x .banner .ad .ad-b {
+  float: right;
+  _display: inline;
+  width: 240px;
+  height: 60px;
+}
+.head-repeat-x .banner .ad {
+  width: 728px;
+}
+.head-repeat-x .full-banner {
+  height: 80px;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+.head-repeat-x .full-banner .logo a {
+  float: left;
+  _display: inline;
+  width: 209px;
+  height: 54px;
+  background-image: url('images/cmstop-logo.png');
+  background-position: -5px 0;
+}
+.head-repeat-x .full-banner .ad {
+  float: right;
+  _display: inline;
+}
+.head-repeat-x .full-banner .ad .ad-a {
+  float: left;
+  _display: inline;
+  width: 650px;
+  height: 80px;
+  margin-right: 9px;
+}
+.head-repeat-x .full-banner .ad .ad-b {
+  float: right;
+  _display: inline;
+  width: 300px;
+  height: 80px;
+}
+.nav {
+  position: relative;
+}
+.nav li,
+.nav li a {
+  float: left;
+  _display: inline;
+}
+.nav li {
+  margin: 10px 8px 0 9px;
+}
+.nav li a {
+  color: #ffffff;
+}
+.nav li a:hover {
+  color: #ffff00;
+}
+.nav li .index {
+  font-weight: bold;
+  margin: 0 4px;
+}
+.nav .hr {
+  width: 2px;
+  height: 17px;
+  background-image: url(images/nav-hr.png);
+}
+.nav-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+.nav-wrapper .border-radius {
+  overflow: hidden;
+  _zoom: 1;
+  position: relative;
+}
+.nav-wrapper .border-radius .left,
+.nav-wrapper .border-radius .right {
+  position: absolute;
+  width: 5px;
+  height: 36px;
+  top: 0;
+}
+.nav-wrapper .border-radius .left {
+  left: 0;
+  background: transparent url('images/head-ico.png') no-repeat 0 -122px;
+}
+.nav-wrapper .border-radius .right {
+  right: 0;
+  background: transparent url('images/head-ico.png') no-repeat 0 -194px;
+}
+.nav-wrapper .border-radius .main {
+  margin: 0 5px;
+  background: transparent url('images/head-ico.png') repeat-x 0 -158px;
+  height: 36px;
+}
+.foot {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+.foot .foot-links {
+  margin-top: 6px;
+}
+.foot .foot-links a {
+  color: #000000;
+  margin: 0 4px;
+  line-height: 24px;
+}
+.foot .foot-links a:hover {
+  color: #cc0000;
+}
+.foot p {
+  line-height: 24px;
+}
+/*鍥炲埌椤堕儴*/
+.mod-gotop,.mod-gotop a{
+  width: 18px;
+  height: 72px;
+}
+.mod-gotop{
+ position: fixed;
+ top: 300px;
+ background: transparent url(images/gotop.png);
+ cursor: pointer;
+}
+.mod-gotop a{
+  visibility: hidden;
+  float: left;
+}
+/*鎸夐挳鏍峰紡*/
+.btn-common,.btn-common-disable,.btn-common-long{
+  cursor: pointer;
+}
+.btn-common,.btn-common-disable{
+  border-width: 0;
+  width: 60px;
+  height: 32px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #fff;
+  background: transparent url(images/btn-submit.png) no-repeat -1px -1px;
+  font-size: 14px;
+  text-align: center;
+}
+.btn-common-disable{
+  background: transparent url(images/btn-submit-disable.png) no-repeat -1px -1px;
+}
+.btn-common-long{
+  background-position: -1px -34px;
+  width: 100px;
+  height: 32px;
+}
+.hr9{
+  height: 9px;
+  clear:both;
+  overflow: hidden
+  _zoom:1;
+}

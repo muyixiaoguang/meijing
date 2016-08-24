@@ -1,0 +1,1 @@
+var IMG_URL="/img.ikanchai.com/",UPLOAD_URL="/upload.ikanchai.com/",APP_URL="/app.ikanchai.com/",WWW_URL="/",SPACE_URL="/space.ikanchai.com/",COOKIE_PRE="cmstop_",COOKIE_DOMAIN=".ikanchai.com",COOKIE_PATH="/",SINA_APPKEY="3972269122",QQ_SOURCEID="1000033";

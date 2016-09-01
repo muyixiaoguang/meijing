@@ -4,6 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+// 引入 express-session 模块
+var session = require('express-session');
+
 var ueditor      = require('ueditor');
 
 var mainRoute = require('./mainroute');
@@ -20,9 +23,15 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+app.use(session({
+  secret: 'meijingwang',// 用来对session数据进行加密的字符串.这个属性值为必须指定的属性。
+  resave:true,// 是指每次请求都重新设置session cookie，假设你的cookie是10000毫秒过期，每次请求都会再设置10000毫秒。
+  saveUninitialized: true,// 是指无论有没有session cookie，每次请求都设置个session cookie ，默认给个标示为 connect.sid。
+  cookie: { maxAge: 10*60 * 1000 }//cookie过期时间，毫秒。
+}));
 //ueditor
 app.use("/libs/ueditor/ue", ueditor(path.join(__dirname, 'public'), function (req, res, next) {
 

@@ -57,7 +57,7 @@
   margin-left: 15px;
 }
 .comment-list .operate .in_a .arrow {
-  background: transparent url('images/sprite-ico.png') no-repeat -170px -22px;
+  background: transparent url('../Images/sprite-ico.png') no-repeat -170px -22px;
   padding: 4px;
 }
 .comment-list .operate .in_a .nums {
@@ -83,7 +83,7 @@
 .page-bottom {
   margin: 20px 0 0px 0;
 }
-/*评论登陆和提交*/
+/*评论登陆和提�?/
 .comment-form {
   background-color: #f4f4f4;
   margin-top: 20px;
@@ -124,7 +124,7 @@
   width: 63px;
   height: 22px;
   line-height: 18px;
-  background: transparent url(images/post.png);
+  background: transparent url(../Images/post.png);
   color: #ffffff;
   border: none;
   float: right;
@@ -207,7 +207,7 @@
   height: 11px;
   bottom: 0;
   right: 0;
-  background: url(../../../apps/comment/images/ico_selected.png);
+  background: url(../Images/ico_selected.png);
 }
 
 .seccode-area label {

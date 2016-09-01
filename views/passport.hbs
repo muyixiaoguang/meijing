@@ -1,7 +1,23 @@
 <h1>{{title}}</h1>
+<script type="text/javascript" src="/scripts/jquery.js"></script>
 
-<form action="passport" method="post">
-    <input type="text" name="name"/>
-    <input type="text" name="age"/>
-    <input type="submit" value="提交"/>
-</form>
+    <input type="text" id="userName" name="userName"/>
+    <input type="text" id="password" name="password"/>
+    <input id="btnSubmit" type="button" value="提交"/>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {
+            var userName=$("#userName").val();
+            var password=$("#password").val();
+            $.ajax({
+                url:"passport", 
+                type:"post",
+                data:{userName:userName,password:password},
+                success:function (data) {
+                    alert(data);
+                }
+            });
+        });
+    });
+</script>

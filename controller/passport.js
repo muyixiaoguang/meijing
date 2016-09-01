@@ -1,22 +1,24 @@
-/**
- * Created by muyi on 2016/8/16.
- */
-var article=require('../models/article');
+
+var user=require('../models/user');
 var express = require('express');
 
 var gt="GET";
 exports.passport = function (req, res, next) {
     if(req.method==gt){
-        article.findAll(function (err,rows) {
-            console.log(rows[0]["Id "]);
-        });
         res.render('passport',{title:'lily'});
     }else {
-        var name=req.body.name;
-        var age =req.body.age;
-        console.log(name);
-        console.log(age);
-        res.redirect("https://baidu.com")
+        var userName=req.body.userName;
+        var password=req.body.password;
+        var values=[userName,password];
+        user.findUser(values,function (err,rows) {
+            if(err){
+                next(err);
+            }else {
+                var tt=1;
+                req.session.user=rows;
+                res.json(tt);
+            }
+        })
     }
 
     /* var userName=req.params("userName");

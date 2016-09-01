@@ -13,3 +13,7 @@ exports.insert=function (values,callback) {
 exports.getArticleByPage=function(values,callback){
     db.query("Select Title,Tip,Content,Image,Post,CreateDate,CreateUser From article;",callback);
 }
+
+exports.getDetail=function (values,callback) {
+    db.query("Select Title,Tip,Content,Image,Post,CreateDate,CreateUser From article Where Id=?",values,callback);
+}

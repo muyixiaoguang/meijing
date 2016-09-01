@@ -11,14 +11,14 @@
   border: 1px solid #ddd;
   /* 新闻排行 标题 */
 
-  /* 新闻排行 切换——标题 */
+  /* 新闻排行 切换——标�?*/
 
-  /* 新闻排行 切换——有序列表 */
+  /* 新闻排行 切换——有序列�?*/
 
 }
 .news-rank-box .title-head {
   height: 37px;
-  background: transparent url('images/sprite-bar.png') repeat-x 0 -31px;
+  background: transparent url('../Images/sprite-bar.png') repeat-x 0 -31px;
 }
 .news-rank-box .title-head .title .words {
   color: #cc0000;
@@ -52,7 +52,7 @@
 }
 .news-rank-box .dotted-head {
   height: 30px;
-  background: transparent url('images/sprite-bar.png') repeat-x 0 0;
+  background: transparent url('../Images/sprite-bar.png') repeat-x 0 0;
 }
 .news-rank-box .dotted-head .title .words {
   color: #cc0000;
@@ -70,7 +70,7 @@
   _display: inline;
 }
 .news-rank-box .dotted-head .ico {
-  background: transparent url('images/sprite-ico.png') no-repeat -60px -160px;
+  background: transparent url('../Images/sprite-ico.png') no-repeat -60px -160px;
   width: 16px;
   height: 30px;
 }
@@ -124,7 +124,7 @@
   width: 14px;
   height: 24px;
   margin-right: 6px;
-  background: transparent url('images/sprite-ico.png') no-repeat -280px -118px;
+  background: transparent url('../Images/sprite-ico.png') no-repeat -280px -118px;
   color: #ffffff;
 }
 .news-rank-box .list .n1,
@@ -149,7 +149,7 @@
   width: 14px;
   height: 24px;
   margin-right: 6px;
-  background: transparent url('images/sprite-ico.png') no-repeat 4px -152px;
+  background: transparent url('../Images/sprite-ico.png') no-repeat 4px -152px;
   color: #fff;
 }
 .news-rank-box .list-point .n1,
@@ -172,7 +172,7 @@
 }
 .pic-recommend .title-head {
   height: 37px;
-  background: transparent url('images/sprite-bar.png') repeat-x 0 -31px;
+  background: transparent url('../Images/sprite-bar.png') repeat-x 0 -31px;
 }
 .pic-recommend .title-head .title .words {
   color: #cc0000;
@@ -206,7 +206,7 @@
 }
 .pic-recommend .dotted-head {
   height: 30px;
-  background: transparent url('images/sprite-bar.png') repeat-x 0 0;
+  background: transparent url('../Images/sprite-bar.png') repeat-x 0 0;
 }
 .pic-recommend .dotted-head .title .words {
   color: #cc0000;
@@ -224,7 +224,7 @@
   _display: inline;
 }
 .pic-recommend .dotted-head .ico {
-  background: transparent url('images/sprite-ico.png') no-repeat -60px -160px;
+  background: transparent url('../Images/sprite-ico.png') no-repeat -60px -160px;
   width: 16px;
   height: 30px;
 }
@@ -269,7 +269,7 @@
   filter: alpha(opacity=50);
 }
 .pic-recommend .v-pic .thumb .ico {
-  background: transparent url('images/sprite-ico.png') no-repeat -108px -169px;
+  background: transparent url('../Images/sprite-ico.png') no-repeat -108px -169px;
   width: 16px;
   height: 13px;
   bottom: 4px;

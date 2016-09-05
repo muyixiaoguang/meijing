@@ -4,16 +4,17 @@ var article=require('../models/article');
 
 exports.detail=function (req,res,next) {
     var id=req.query.id;
-    res.render("detail");
-    /*article.getDetail([id],function (err,rows) {
+    article.getDetail([id],function (err,rows) {
         if(err){
             next(err);
         }else {
             if(rows){
-                res.render("detail",rows);
+                console.log(rows);
+                console.log(rows[0].Title)
+                res.render("detail",rows[0]);
             }else {
                 res.render("noarticle");
             }
         }
-    })*/
+    })
 }

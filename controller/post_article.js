@@ -7,7 +7,7 @@ var express = require('express');
 var gt="GET";
 exports.post_article = function (req, res, next) {
     if(req.method==gt){
-        res.render('postarticle',{title:'lily'});
+        res.render('write',{title:'lily'});
     }else {
         var title=req.body.title;
         var content =req.body.content;

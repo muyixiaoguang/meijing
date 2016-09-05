@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="zh-CN" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="zh-CN" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="zh-CN" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="zh-CN"><!--<![endif]-->
+<head>
+    <script>
+        var url = location.search;
+        url = url.substr(1);
+        var bs={
+            versions:function(){
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {//移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1 //是否iPad
+                };
+            }(),
+            language:(navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        if(bs.versions.mobile && url!='mobile'){
+            if(bs.versions.android||bs.versions.iPhone||bs.versions.iPad||bs.versions.ios){
+                //window.location.href="/wap/wap.php";
+            }
+        }
+    </script>
+    <meta charset="utf-8">
+    <title>美景网,美景百科,旅游资讯,旅游攻略</title>
+    <meta name="description" content="美景网,美景百科,旅游资讯,旅游攻略" />
+    <meta name="keywords" content="美景网,美景百科,旅游资讯,旅游攻略" />
+    <meta name="author" content="muyi" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <base target="_blank">
+    <!-- <link rel="stylesheet" type="text/css" href="Css/cmstop-common.css" />-->
+    <!-- <link rel="stylesheet" type="text/css" href="Css/cmstop-index.css" /> -->
+    <!--[if lt IE 9 ]>
+    <script type="text/javascript" src="Scripts/modernizr.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="Scripts/cmstop-common.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.js"></script>
+    <script type="text/javascript" src="Scripts/config.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.cookie.js"></script>
+    <!-- 本页面私有 -->
+    <link rel="stylesheet" type="text/css" href="Css/style.css" />
+    <script type="text/javascript" src="Scripts/common.js"></script>
+    <script type="text/javascript" src="Scripts/index.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="libs/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="libs/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="libs/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <!-- @本页面私有 -->
+</head>
+<body>
+<!--网站公共头部-->
+<div class="topbar">
+    <div class=" wrapper">
+        <div class="logo"><a href="/" title="美景网,美景百科,旅游资讯,旅游攻略">美景网,美景百科,旅游资讯,旅游攻略</a></div>
+        <ul class="nav">
+            <li class=""><strong><a href="/" title="" target="_self"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;首页</a></strong></li>
+
+            <li class=""><strong><a href="/a/view/" title="" target="_self"><span class="glyphicon
+glyphicon-book"></span>&nbsp;&nbsp;观点</a></strong>
+                <dl>
+                    <em></em>
+
+                    <dd><a href="/a/view/opinion/" title="" target="_self">观点</a></dd>
+
+                    <dd><a href="/a/view/ec/" title="" target="_self">电商</a></dd>
+
+                    <dd><a href="/a/view/media/" title="" target="_self">传媒</a></dd>
+
+                    <dd><a href="/a/view/unicom/" title="" target="_self">通信</a></dd>
+
+                </dl></li><li class=""><strong><a href="/a/start/" title="" target="_self"><span class="glyphicon
+glyphicon-book"></span>&nbsp;&nbsp;创投</a></strong>
+            <dl>
+                <em></em>
+
+                <dd><a href="/a/start/work/" title="" target="_self">创业</a></dd>
+
+                <dd><a href="/a/start/people/" title="" target="_self">人物</a></dd>
+
+            </dl></li><li class=""><strong><a href="/a/shangye/" title="" target="_self"><span class="glyphicon
+glyphicon-book"></span>&nbsp;&nbsp;商业</a></strong>
+        </li><li class=""><strong><a href="/a/zhike/" title="" target="_self"><span class="glyphicon
+glyphicon-book"></span>&nbsp;&nbsp;智客</a></strong>
+        </li><li class=""><strong><a href="/post" title="" target="_self"><span class="glyphicon
+glyphicon-book"></span>&nbsp;&nbsp;发稿</a></strong>
+        </li><li class=""><strong><a href="/a/zimeiti/" title="" target="_self"><span class="glyphicon
+glyphicon-book"></span>&nbsp;&nbsp;自媒体</a></strong>
+            <dl>
+                <em></em>
+
+                <dd><a href="/a/zimeiti/yejie/" title="" target="_self">业界</a></dd>
+
+                <dd><a href="/a/zimeiti/shouyou/" title="" target="_self">手游</a></dd>
+
+                <dd><a href="/a/zimeiti/chuanmei/" title="" target="_self">传媒</a></dd>
+
+                <dd><a href="/a/zimeiti/shouji/" title="" target="_self">手机</a></dd>
+
+            </dl></li>
+
+        </ul>
+        <div class="action">
+            <a href="/a/about/submission/" class="n1" target="_blank" title="投稿">投稿</a>
+        </div>
+    </div>
+</div>
+
+<!--@网站公共头部-->
+
+<div class="main">
+    <!-- 标题头 -->
+        <div>景点名称:
+            <select class="txt" name="sighSpot">
+                <option value="0">请选择</option>
+                <option value="1">热情的沙漠</option>
+            </select>
+        </div>
+
+        <div>输入标题:
+            <input type="text" placeholder="请输入标题" class="txt" name="title" /> </div>
+        <div>
+            <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+        </div>
+        <div>
+            <input class="sendSubmit" type="button" value="发  表"/>
+        </div>
+    <!-- 标题头end -->
+</div>
+<style>
+    .main{
+        margin:80px auto;
+        width:1000px;
+        z-index:0;
+    }
+    .sendSubmit{
+        line-height: 88px;width: 120px;
+        height: 40px;
+        background: #00AA98;
+        border:none;
+        font-size: 20px;
+        color: #fff;
+        line-height: 40px;
+        margin-right: 12px;
+        margin-top: 20px;
+    }
+
+
+    .txt{
+        height: 26px;
+        background: #ffffff;
+        width: 200px;
+        margin-bottom: 15px;
+    }
+</style>
+
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
+
+    function getContent() {
+        var arr = [];
+        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getContent());
+        alert(arr.join("\n"));
+    }
+</script>
+
+<!--网站公共页脚-->
+<div class="footer">
+    <div class="wrapper">
+        <div class="lft">Copyright © 2002-2011 锦尚中国 版权所有  备案：蜀ICP备12345678号 </div>
+        <div class="rgt">
+
+            <a href="/a/about/">关于我们</a>
+            <span></span>
+
+            <a href="/a/about/report/">寻求报道</a>
+            <span></span>
+
+            <a href="/a/about/submission/">投稿须知</a>
+            <span></span>
+
+            <a href="/a/about/cooperation/">商务合作</a>
+            <span></span>
+
+            <a href="/a/about/notice/">版权申明</a>
+            <span></span>
+
+            <a href="/a/about/contact/">联系我们</a>
+            <span></span>
+
+            <span style="display:none"><!-- 站长统计 --></span>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $(".nav li dl").each(function(){
+            if($(this).find("dd").size()==0){
+                $(this).remove();
+            }
+        });
+
+    });
+</script>
+<!--@网站公共页脚-->
+
+
+</body>
+
+
+</html>

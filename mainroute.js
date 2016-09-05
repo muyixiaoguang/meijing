@@ -18,10 +18,11 @@ router.get("/",home.index);
 router.get('/passport', passport.passport); // 用户个人主页
 router.post('/passport', passport.passport); // 用户个人主页
 
-router.get("/post",postarticle.post_article);
+router.get("/write",postarticle.post_article);
 router.post("/post",postarticle.post_article);
 
 router.get("/getArticle",apiArticle.getArticle);
+router.get("/getReply",apiArticle.getReply);
 
 router.get("/detail",detail.detail);
 module.exports = router;

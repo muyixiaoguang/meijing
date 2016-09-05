@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+	font-size:14px;
+	color: #000;
+	background: #f9f9fc;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+.center{
+	width:1000px;
+	margin:80px auto;
+	position: relative;
+	height: 600px;
+	background: orange;
+	background: url("../images/bg.png") no-repeat 80px 100px;
+}
+
+.center-head{
+	height: 120px;
+}
+.head-left{
+	float: left;
+	margin-left: 120px;
+	margin-top: 30px;
+	font-size: 32px;
+	font-family: '宋体';
+}
+.head-right{
+	float: right;
+	margin-right: 20px;
+}
+
+.center-box{
+	position: absolute;
+	right: 80px;
+	bottom: 180px;
+	width: 320px;
+	height: 300px;
+	border:1px solid #d3d3d3;
+	border-radius:5px;
+	background:#ffffff;
+}
+
+.center-cell{
+	padding: 0 20px;
+}
+
+.center-cell input{
+	height: 30px;
+	background: #ffffff;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.tip{
+	margin-top: 20px;
+	font-size: 20px;
+	color: #333;
+}
+
+.forgive{
+	text-align: right;
+	margin-top: 10px;
+}
+
+.center-submit{
+	border-top: 1px solid #d3d3d3;
+	background: #fbfcfb;
+	height: 88px;
+	text-align: center;
+	line-height: 88px;
+}
+
+.login{
+	width: 120px;
+	height: 40px;
+	background: #3fa925;
+	border:none;
+	font-size: 20px;
+	color: #fff;
+	line-height: 40px;
+	margin-right: 12px;
+}

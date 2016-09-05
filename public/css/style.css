@@ -225,7 +225,7 @@ html{zoom:1}html *{outline:0;zoom:1}html button::-moz-focus-inner{border-color:t
 .mainnews .newsr .brandshow { margin-top: 10px;}
 .mainnews .newsr .brandshow a img { margin: 10px auto;}
 
-	 /*合作伙伴、友情链�?/
+
 .main .mainother { width: 1150px; padding: 0 25px; background-color: #fff; margin: 0 auto; overflow: hidden; padding-bottom: 20px; margin-top: 15px;}
 .mainother .partners, .mainother .links { overflow: hidden; }
 .mainother .partners .partnerstitle { background: url(../Images/partnerstitle.png) no-repeat; width: 1150px; height: 51px; margin-top: 15px; }
@@ -234,10 +234,9 @@ html{zoom:1}html *{outline:0;zoom:1}html button::-moz-focus-inner{border-color:t
 .mainother .links .linkstitle { background: url(../Images/linkstitle.png) no-repeat; width: 1150px; height: 51px; margin-top: 15px; }
 .mainother .links ul li { float: left; font-size: 14px; margin: 5px 10px; *width: 80px;}
 
-/*首页-End*/
 
 
-/*智能硬件列表�?Start*/
+/*智能硬件列表�?Start*/
 .main .mainnews .viewpoint, .listr .viewpoint { float: left; width: 320px; margin-left: 15px; display: inline; margin-top: 10px;}
 .mainnews .viewpoint ul, .listr .viewpoint ul { padding: 0px 0; background: url(../Images/symbol-8.png) no-repeat 0px 8px; overflow: hidden;}
 .mainnews .viewpoint ul li, .listr .viewpoint ul li { color: #3e3e3e; font-size: 16px; height: 36px; line-height: 36px; text-indent: 30px; *overflow: hidden; *width: 290px;}
@@ -259,7 +258,7 @@ html{zoom:1}html *{outline:0;zoom:1}html button::-moz-focus-inner{border-color:t
 .main .page { margin: 50px auto; width: 440px;}
 .main .page a { padding: 5px 10px; background-color: #00AA98; color: #fff; font-size: 14px; margin: 0 1px;}
 .main .page a:hover, .main .page .on { background-color: #414141;}
-/*智能硬件列表�?End*/
+/*智能硬件列表�?End*/
 
 /*砍柴网列表页-Start*/
 .newslist { width: 1150px; padding: 0 25px; background-color: #fff; margin: 0 auto; overflow: hidden; padding-bottom: 20px; margin-top: 80px;}
@@ -393,11 +392,11 @@ html{zoom:1}html *{outline:0;zoom:1}html button::-moz-focus-inner{border-color:t
 
 /*砍柴网内容页-End*/
 
-	/*侧边栏按�?/
+	/*侧边栏按�?/
 .main .mreturn {}
 *{ padding:0px; margin:0px;}
 *html{background-image:url(about:blank);background-attachment:fixed;}/*解决IE6下滚动抖动的问题*/
-/*解决IE6下不兼容 position:fixed 的问�?/
+/*解决IE6下不兼容 position:fixed 的问�?/
 #code,#code_hover,#gotop{ width:36px; height:48px; background:url(../Images/icon.png) no-repeat; position:fixed; left:50%; margin-left: 610px; cursor:pointer;
 _position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
 #code{ background-position:-276px -258px; bottom:120px; _margin-bottom:120px; background: url(../Images/side-icon01.png) no-repeat center #DADBDD;}

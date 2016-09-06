@@ -174,7 +174,6 @@ glyphicon-book"></span>&nbsp;&nbsp;自媒体</a></strong>
             <!--精选导读-->
             <div class="chosen" style="margin-top:80px;">
                 <div class="com-title"><span><img src="images/symbol-4.png" alt="">精选推荐</span></div>
-
                 {{#each message}}
                 <div class="chosenbox ">
                     <div class="chosenimg"><a href="//a/zimeiti/shouyou/2015/0207/173.html" title="{{{Title}}}" target="_blank">
@@ -187,7 +186,9 @@ glyphicon-book"></span>&nbsp;&nbsp;自媒体</a></strong>
                 <div class="floatfix"></div>
             </div>
             <!--@精选导读-->
+
             <!--热门推荐-->
+            <!-- 为了减少首页dom加载，将热门推荐改为ajax异步获取 -->
             <div class="hot tuijian">
                 <div class="com-title"><span><img src="images/symbol-6.png" alt="">热门推荐</span></div>
                 <div class="hotbox">

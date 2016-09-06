@@ -173,45 +173,17 @@ glyphicon-book"></span>&nbsp;&nbsp;自媒体</a></strong>
 
             <!--精选导读-->
             <div class="chosen" style="margin-top:80px;">
-                <div class="com-title"><span><img src="images/symbol-4.png" alt="">精选导读</span></div>
-                <div class="chosenbox ">
-                    <div class="chosenimg"><a href="//a/zimeiti/shouyou/2015/0207/173.html" title="苏宁借阿里风波搞营销：谁挠了用户的心" target="_blank"><img src="/uploads/allimg/150207/107.jpg" alt="苏宁借阿里风波搞营销：谁挠了用户的心" width="130" height="85"></a></div>
-                    <h3><a href="/a/zimeiti/shouyou/2015/0207/173.html" title="苏宁借阿里风波搞营销：谁挠了用户的心" target="_blank">苏宁借阿里风波搞营销：谁挠了用户的心</a></h3>
-                    <p>从具体的营销广告词来看，苏宁巧妙的借势并作为一条情感纽带紧密地连接起两...</p>
-                    <p><span></span></p>
-                </div>
-                <div class="chosenbox chosenbox-ml">
-                    <div class="chosenimg"><a href="//a/zimeiti/shouyou/2015/0207/174.html" title="谁给了乐视小米们一记响亮的耳光？" target="_blank"><img src="/uploads/allimg/150207/112.png" alt="谁给了乐视小米们一记响亮的耳光？" width="130" height="85"></a></div>
-                    <h3><a href="/a/zimeiti/shouyou/2015/0207/174.html" title="谁给了乐视小米们一记响亮的耳光？" target="_blank">谁给了乐视小米们一记响亮的耳光？</a></h3>
-                    <p>凭借互联网思维，小米手机短短几年一跃成为国内的知名品牌，市场份额名列前...</p>
-                    <p><span></span></p>
-                </div>
-                <div class="chosenbox ">
-                    <div class="chosenimg"><a href="//a/zimeiti/shouyou/2015/0207/175.html" title="泛社交入口统一，手Q发力陌生人市场将带来多大的效应?" target="_blank"><img src="/uploads/allimg/150207/109.png" alt="泛社交入口统一，手Q发力陌生人市场将带来多大的效应?" width="130" height="85"></a></div>
-                    <h3><a href="/a/zimeiti/shouyou/2015/0207/175.html" title="泛社交入口统一，手Q发力陌生人市场将带来多大的效应?" target="_blank">泛社交入口统一，手Q发力陌生人市场将带来多大的效应?</a></h3>
-                    <p>新版手Q的发布，人们关注的焦点是增加了手机QQ红包功能。由于支付宝也推出...</p>
-                    <p><span></span></p>
-                </div>
-                <div class="chosenbox chosenbox-ml">
-                    <div class="chosenimg"><a href="//a/zimeiti/shouyou/2015/0207/170.html" title="1亿美金砸入二手车，百姓网能实现等风来吗？" target="_blank"><img src="/uploads/allimg/150207/110.jpg" alt="1亿美金砸入二手车，百姓网能实现等风来吗？" width="130" height="85"></a></div>
-                    <h3><a href="/a/zimeiti/shouyou/2015/0207/170.html" title="1亿美金砸入二手车，百姓网能实现等风来吗？" target="_blank">1亿美金砸入二手车，百姓网能实现等风来吗？</a></h3>
-                    <p>和其他二手车商家相比，百姓网的模式超级轻，这是他们比较习惯的处理方式。...</p>
-                    <p><span></span></p>
-                </div>
-                <div class="chosenbox ">
-                    <div class="chosenimg"><a href="//a/zimeiti/shouyou/2015/0207/172.html" title="2015 科技圈三大预言：高速wi-fi、物联网、更智能的手机" target="_blank"><img src="/uploads/allimg/150207/111.jpg" alt="2015 科技圈三大预言：高速wi-fi、物联网、更智能的手机" width="130" height="85"></a></div>
-                    <h3><a href="/a/zimeiti/shouyou/2015/0207/172.html" title="2015 科技圈三大预言：高速wi-fi、物联网、更智能的手机" target="_blank">2015 科技圈三大预言：高速wi-fi、物联网、更智能的手机</a></h3>
-                    <p>2015年，智能手机将真正的“智能”起来，应用程序之间能够相互融合、连接，...</p>
-                    <p><span></span></p>
-                </div>
-                <div class="chosenbox chosenbox-ml">
-                    <div class="chosenimg"><a href="//a/zimeiti/shouji/2015/0207/166.html" title="IBM裁员风波和搜狐紧急裁员有啥联系？" target="_blank"><img src="/uploads/allimg/150207/106.jpg" alt="IBM裁员风波和搜狐紧急裁员有啥联系？" width="130" height="85"></a></div>
-                    <h3><a href="/a/zimeiti/shouji/2015/0207/166.html" title="IBM裁员风波和搜狐紧急裁员有啥联系？" target="_blank">IBM裁员风波和搜狐紧急裁员有啥联系？</a></h3>
-                    <p>虽然IBM不承认自己将裁员11万人，但是裁员是属实的。新年伊始，裁员和离职...</p>
-                    <p><span></span></p>
-                </div>
+                <div class="com-title"><span><img src="images/symbol-4.png" alt="">精选推荐</span></div>
 
-
+                {{#each message}}
+                <div class="chosenbox ">
+                    <div class="chosenimg"><a href="//a/zimeiti/shouyou/2015/0207/173.html" title="{{{Title}}}" target="_blank">
+                        <img src="{{{Image}}}" alt="{{{Title}}}" width="130" height="85"></a></div>
+                    <h3><a href="/a/zimeiti/shouyou/2015/0207/173.html" title="{{{Title}}}" target="_blank">{{{Title}}}</a></h3>
+                    <p>{{{Content}}}</p>
+                    <p><span></span></p>
+                </div>
+                {{/each}}
                 <div class="floatfix"></div>
             </div>
             <!--@精选导读-->

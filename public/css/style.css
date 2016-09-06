@@ -140,7 +140,10 @@ html{zoom:1}html *{outline:0;zoom:1}html button::-moz-focus-inner{border-color:t
 
 .mainnews .newsl .chosen { margin-top: 20px; height: 385px; padding-top: 25px; overflow:hidden;}
 .mainnews .newsl .chosenbox { float: left; width: 385px; height: 87px; background-color: #F1F6F8; padding: 10px; margin-top: 7px; display: inline;}
-.mainnews .newsl .chosenbox-ml { margin-left:9px;}
+
+.mainnews .newsl .chosenbox:nth-child(odd){ margin-left:9px;}
+
+/*.mainnews .newsl .chosenbox-ml { margin-left:9px;}*/
 .mainnews .newsl .chosenbox .chosenimg { float: left; margin-right: 10px; display: inline; width: 130px; height: 85px;}
 .mainnews .newsl .chosenbox h3 { font-size: 16px; margin-left: 140px; text-align: left;}
 .mainnews .newsl .chosenbox h3:hover { background-color: #00AA98; color: #fff;}

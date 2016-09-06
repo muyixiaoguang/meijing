@@ -1,8 +1,18 @@
 var express = require('express');
+var recommend=require('../models/recommend');
+
 var router = express.Router();
 
+
+
 exports.index = function (req, res, next) {
-    res.render("index");
+    recommend.findAll(function (err,rows) {
+        if(err){
+            next(err);
+        }else {
+            res.render("index",{message:rows});
+        }
+    })
 };
 
 

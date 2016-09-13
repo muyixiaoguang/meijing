@@ -25,4 +25,6 @@ router.get("/getArticle",apiArticle.getArticle);
 router.get("/getReply",apiArticle.getReply);
 
 router.get("/detail",detail.detail);
+
+router.get("/api/getRelatedArticle",apiArticle.getRelatedArticle);
 module.exports = router;

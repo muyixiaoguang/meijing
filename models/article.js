@@ -15,5 +15,5 @@ exports.getArticleByPage=function(values,callback){
 }
 
 exports.getDetail=function (values,callback) {
-    db.query("Select Title,Tip,Content,Image,CreateDate,CreateUser From article Where Id=?",values,callback);
+    db.query("Select Id,Title,Tip,Content,Image,CreateDate,CreateUser From article Where Id=?",values,callback);
 }

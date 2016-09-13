@@ -19,6 +19,27 @@
     <script type="text/javascript" src="Scripts/jquery.js"></script>
     <script type="text/javascript" src="Scripts/jquery.cookie.js"></script>
     <script type="text/javascript" src="Scripts/cmstop-common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+                url:'/api/getRelatedArticle',
+                type:'get',
+                data:{id:$("#articleId").val()},
+                success:function (data) {
+                    if(data==undefined||data=="[]"){
+                        return;
+                    }else {
+                        var lidata="";
+                        data=eval(data);
+                        for(var i=0;i<data.length;i++){
+                            lidata+='<li><a href="detail?id='+data[i].Id+'">'+data[i].Title+'</a></li>';
+                        }
+                        $(".viewpoint.hotlist ul").html(lidata);
+                    }
+                }
+            });
+        })
+    </script>
     <!--<script type="text/javascript">
         var contentid = '175';// 文章ID
         var title = "泛社交入口统一，手Q发力陌生人市场将带来多大的效应?";//文章标题
@@ -229,12 +250,12 @@ glyphicon-book"></span>&nbsp;&nbsp;自媒体</a></strong>
     <!--右侧-->
     <div class="listr">
         <div class="rserach">
-            <form  name="formsearch" action="/plus/search.php">
+            <!--<form  name="formsearch" action="/plus/search.php">-->
                 <input type="hidden" name="kwtype" value="0" />
                 <input name="q" type="text" class="text-rserach" />
-                <input  type="submit" class="btn-rserach" value="" />
+                <input  type="button" class="btn-rserach" value="" onclick="alert($("#articleId").val());" />
 
-            </form>
+           <!-- </form>-->
         </div>
         <div class="adimg">
             <!-- 广告位_01 -->
@@ -300,7 +321,7 @@ glyphicon-book"></span>&nbsp;&nbsp;自媒体</a></strong>
         </div>
         <!--科技快报-->
         <div class="viewpoint hotlist">
-            <div class="com-title"><span><img  src="images/symbol-13.png" alt="" />热门资讯</span></div>
+            <div class="com-title"><span><img  src="images/symbol-13.png" alt="" />相关景点</span></div>
             <ul>
                 <li><a href="/a/zimeiti/shouyou/2015/0207/175.html">泛社交入口统一，手Q发力陌生人</a></li>
                 <li><a href="/a/zimeiti/shouyou/2015/0207/171.html">家政app: 会是保姆的春天吗？</a></li>
@@ -372,7 +393,7 @@ glyphicon-book"></span>&nbsp;&nbsp;自媒体</a></strong>
         </div>
     </div>
 </div>
-
+<input type="hidden" id="articleId" value="{{Id}}">
 <script>
     $(function(){
         $(".nav li dl").each(function(){
@@ -380,6 +401,9 @@ glyphicon-book"></span>&nbsp;&nbsp;自媒体</a></strong>
                 $(this).remove();
             }
         });
+        //
+
+
 
     });
 </script>
